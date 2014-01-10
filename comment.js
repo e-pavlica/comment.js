@@ -39,7 +39,9 @@ function bindCommentJs() {
   // send the input comment to the provided firebase
   function postComment() {
     var d = new Date();
-    var data = '{"comment":"' + $('#commentJsInput').val() + '", "submitted" :"' + d + '"}';
+    var comment = $('#commentJsInput').val();
+    var url = document.URL;
+    var data = '{"comment":"' + comment + '", "submitted" :"' + d + '", "url":"' + url + '"}';
     // change the button icon
     $('#commentJsSubmit').html('<i class=commentjsicon-ellipsis></i>');
     // perform the ajazx request
