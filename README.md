@@ -13,7 +13,7 @@ Setup a firebase at http://firebase.com. Make sure that the security rules inclu
 Add the comment.js (or minified comment.min.js) to the head of any document you wish to have it displayed on:
 
 ```html
-<script src='comment.min.js' firebase='https://MY_FIREBASE.firebaseio.com/'></script></head>
+<script src='comment.min.js' firebase='https://MY_FIREBASE.firebaseio.com/'></script>
 ```
 
 The 'firebase' attribute should point to your firebase, and end with a slash (as above). You should see the comment box on the middle-right of your page after it loads. 
